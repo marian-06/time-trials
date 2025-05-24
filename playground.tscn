@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dix3bsk55npss"]
+
+[ext_resource type="Texture2D" uid="uid://c4ut8orteqpbg" path="res://Players/Sprites/wren_idle_1.png" id="1_rupst"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wt17y"]
+radius = 25.0
+height = 90.0
+
+[node name="Playground" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(232, 132)
+shape = SubResource("CapsuleShape2D_wt17y")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(235, 131)
+scale = Vector2(0.118661, 0.136651)
+texture = ExtResource("1_rupst")
